@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+<title>Media Gallery</title>
+</head>
+<body>
+
+  <!-- Nav Bar -->
+ <nav>
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+
+ </nav>
+
+ <!-- Slide Show -->
+<section class="slideshow">
+<div class="slideshow-wrapper">
+
+ <div class="mySlides">
+   <div class="numbertext">1 / 6</div>
+     <img src="media-img/castle.jpg" style="width:100%">
+ </div>
+
+ <div class="mySlides">
+   <div class="numbertext">2 / 6</div>
+     <img src="media-img/muse.jpg" style="width:100%">
+ </div>
+
+ <div class="mySlides">
+   <div class="numbertext">3 / 6</div>
+     <img src="media-img/cobble-2.jpg" style="width:100%">
+ </div>
+
+ <div class="mySlides">
+   <div class="numbertext">4 / 6</div>
+     <img src="media-img/dublin.jpg" style="width:100%">
+ </div>
+
+ <div class="mySlides">
+   <div class="numbertext">5 / 6</div>
+     <img src="media-img/heads.jpg" style="width:100%">
+ </div>
+
+ <div class="mySlides">
+   <div class="numbertext">5 / 6</div>
+     <img src="media-img/pucks.jpg" style="width:100%">
+ </div>
+
+
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ <div class="caption-container">
+   <p id="caption"></p>
+ </div>
+</div>
+
+ <!-- Thumbnail images -->
+ <div class="row">
+   <div class="column">
+     <img class="demo cursor" src="media-img/castle.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+   </div>
+   <div class="column">
+     <img class="demo cursor" src="media-img/muse.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+   </div>
+   <div class="column">
+     <img class="demo cursor" src="media-img/cobble-2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+   </div>
+   <div class="column">
+     <img class="demo cursor" src="media-img/dublin.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+   </div>
+   <div class="column">
+     <img class="demo cursor" src="media-img/heads.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+   </div>
+   <div class="column">
+     <img class="demo cursor" src="media-img/pucks.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+   </div>
+</div>
+</section>
+
+<!-- Media card rows -->
+<div class="row-2">
+  <div class="column-2">
+    <div class="card-2">
+    <img src="media-img/house.jpg" alt="card 2 photo">
+    <div class="card__content">
+      <div class="card__title">Victorian House</div>
+      <p class="card__text">This victorian mansion reminds me of that film, Portrait of a Lady on Fire, great movie. If you haven't seen it, I highly reccomend.  </p>
+      <button class="btn btn--block card__btn">View</button></div>
+  </div>
+</div>
+    <div class="column-2">
+      <div class="card-2">
+      <img src="media-img/cobble-2.jpg" alt="card 2 photo">
+      <div class="card__content">
+        <div class="card__title">Cobble streets</div>
+        <p class="card__text">I really love cobble streets and Northern European architecture. That monument looks really cool too. I hope it's not problematic at all.</p>
+        <button class="btn btn--block card__btn">View</button></div>
+    </div>
+  </div>
+      <div class="column-2">
+        <div class="card-2">
+        <img src="media-img/dublin.jpg" alt="card 2 photo">
+        <div class="card__content">
+          <div class="card__title">Library in Dublin</div>
+          <p class="card__text">This is a beautiful library in Dublin. I forget the name of it but I think it may be on Trinity College's campus, just a shot in the dark.</p>
+          <button class="btn btn--block card__btn">View</button></div>
+      </div>
+    </div>
+</div>
+<div class="row-2">
+  <div class="column-2">
+    <div class="card-2">
+    <img src="media-img/home.jpg" alt="card 2 photo">
+    <div class="card__content">
+      <div class="card__title">Garden House</div>
+      <p class="card__text">I dream of living here one day. Hopefully, we don't run into a mass housing crisis with rising sea levels coming... We will.</p>
+      <button class="btn btn--block card__btn">View</button></div>
+  </div>
+</div>
+    <div class="column-2">
+      <div class="card-2">
+      <img src="media-img/heads.jpg" alt="card 2 photo">
+      <div class="card__content">
+        <div class="card__title">Bunch a heads</div>
+        <p class="card__text">This person seems to be really enjoying looking at these heads. Honestly, kind of jealous.</p>
+        <button class="btn btn--block card__btn">View</button></div>
+    </div>
+  </div>
+      <div class="column-2">
+        <div class="card-2">
+        <img src="media-img/pour-over.jpg" alt="card 2 photo">
+        <div class="card__content">
+          <div class="card__title">Pour over</div>
+          <p class="card__text">This is a certain way to make coffee that invloves pouring hot water over a filter with the grounds in it.</p>
+          <button class="btn btn--block card__btn">View</button></div>
+      </div>
+    </div>
+</div>
+<div class="row-2">
+  <div class="column-2">
+    <div class="card-2">
+    <img src="media-img/pucks.jpg" alt="card 2 photo">
+    <div class="card__content">
+      <div class="card__title">Espresso pucks</div>
+      <p class="card__text">These are really fun to play with. If you ever work at a coffee shop, you'll probably use one of these.</p>
+      <button class="btn btn--block card__btn modal">View</button></div>
+  </div>
+</div>
+    <div class="column-2">
+      <div class="card-2">
+      <img src="media-img/muse.jpg" alt="card 2 photo">
+      <div class="card__content">
+        <div class="card__title">A beautiful Gallery</div>
+        <p class="card__text">Not sure what museum this is but, look at the color scheme.</p>
+        <button class="btn btn--block card__btn">View</button></div>
+    </div>
+  </div>
+      <div class="column-2">
+        <div class="card-2">
+        <img src="media-img/castle.jpg" alt="card 2 photo">
+        <div class="card__content">
+          <div class="card__title">Castle in Ireland</div>
+          <p class="card__text">I'm actually not sure if this castle is in Ireland. I lied... sorry</p>
+          <button class="btn btn--block card__btn">View</button></div>
+      </div>
+    </div>
+</div>
+<footer>
+  <p>2021 Dan Wellings &nbsp;|&nbsp; All photos from unsplash via Lorem Picsum</p>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <!-- couldn't get the modals to work :(-->
+<script src="page.js"></script>
+</body>
+</html>
